@@ -1,0 +1,39 @@
+Dec 27 15:49:14.969 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Dec 27 15:49:14.969 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41233.
+Dec 27 15:49:14.979 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 27 15:49:14.979 HYPERVISOR: exec_cmd: hypervisor working_dir /home/franc/GNS3/projects/fr2019/project-files/dynamips 
+Dec 27 15:49:14.979 GENERAL: working_dir=/home/franc/GNS3/projects/fr2019/project-files/dynamips
+Dec 27 15:49:14.980 HYPERVISOR: exec_cmd: hypervisor working_dir /home/franc/GNS3/projects/fr2019/project-files/dynamips/d5d7b5f0-d295-4075-b5b5-f2174eea8892 
+Dec 27 15:49:14.980 GENERAL: working_dir=/home/franc/GNS3/projects/fr2019/project-files/dynamips/d5d7b5f0-d295-4075-b5b5-f2174eea8892
+Dec 27 15:49:14.980 HYPERVISOR: exec_cmd: vm create ISP 6 c7200 
+Dec 27 15:49:14.980 VM: VM ISP created.
+Dec 27 15:49:14.981 HYPERVISOR: exec_cmd: vm set_con_tcp_port ISP 5005 
+Dec 27 15:49:14.981 HYPERVISOR: exec_cmd: c7200 get_mac_addr ISP 
+Dec 27 15:49:14.981 HYPERVISOR: exec_cmd: vm get_status ISP 
+Dec 27 15:49:14.982 HYPERVISOR: exec_cmd: vm slot_add_binding ISP 0 0 C7200-IO-FE 
+Dec 27 15:49:14.982 HYPERVISOR: exec_cmd: vm set_disk0 ISP 0 
+Dec 27 15:49:14.983 HYPERVISOR: exec_cmd: vm get_status ISP 
+Dec 27 15:49:14.983 HYPERVISOR: exec_cmd: vm set_idle_pc ISP 0x601712a8 
+Dec 27 15:49:14.984 HYPERVISOR: exec_cmd: vm set_ios ISP /home/franc/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Dec 27 15:49:14.984 HYPERVISOR: exec_cmd: c7200 set_mac_addr ISP ca06.1936.0000 
+Dec 27 15:49:14.985 HYPERVISOR: exec_cmd: vm set_nvram ISP 512 
+Dec 27 15:49:14.985 HYPERVISOR: exec_cmd: vm set_ram ISP 512 
+Dec 27 15:49:14.985 HYPERVISOR: exec_cmd: vm get_status ISP 
+Dec 27 15:49:14.985 HYPERVISOR: exec_cmd: vm slot_remove_binding ISP 0 0 
+Dec 27 15:49:14.986 HYPERVISOR: exec_cmd: vm get_status ISP 
+Dec 27 15:49:14.986 HYPERVISOR: exec_cmd: vm slot_add_binding ISP 0 0 C7200-IO-2FE 
+Dec 27 15:49:14.986 HYPERVISOR: exec_cmd: vm get_status ISP 
+Dec 27 15:49:14.986 HYPERVISOR: exec_cmd: vm slot_add_binding ISP 1 0 PA-2FE-TX 
+Dec 27 15:49:19.132 HYPERVISOR: exec_cmd: nio create_udp udp-dd140559-72e8-4eac-abbc-2104b979a6d5 10111 127.0.0.1 10112 
+Dec 27 15:49:19.349 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP 0 1 udp-dd140559-72e8-4eac-abbc-2104b979a6d5 
+Dec 27 15:49:19.349 HYPERVISOR: exec_cmd: vm get_status ISP 
+Dec 27 15:49:19.669 HYPERVISOR: exec_cmd: nio create_udp udp-526c8128-eb7f-436c-ad51-c75588d5bf8e 10004 127.0.0.1 10005 
+Dec 27 15:49:19.670 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP 0 0 udp-526c8128-eb7f-436c-ad51-c75588d5bf8e 
+Dec 27 15:49:19.670 HYPERVISOR: exec_cmd: vm get_status ISP 
+Dec 27 15:49:40.763 HYPERVISOR: exec_cmd: vm get_status ISP 
+Dec 27 15:49:40.763 HYPERVISOR: exec_cmd: vm extract_config ISP 
+Dec 27 15:49:40.763 HYPERVISOR: exec_cmd: vm delete ISP 
+Dec 27 15:49:40.763 VM: VM ISP destroyed.
+Dec 27 15:49:40.764 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 27 15:49:41.004 HYPERVISOR: Stopped.
+Dec 27 15:49:41.004 GENERAL: reset done.

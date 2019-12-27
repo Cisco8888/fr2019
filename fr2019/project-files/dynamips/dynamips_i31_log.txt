@@ -1,0 +1,42 @@
+Dec 27 15:49:14.934 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Dec 27 15:49:14.934 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 43415.
+Dec 27 15:49:14.939 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 27 15:49:14.940 HYPERVISOR: exec_cmd: hypervisor working_dir /home/franc/GNS3/projects/fr2019/project-files/dynamips 
+Dec 27 15:49:14.940 GENERAL: working_dir=/home/franc/GNS3/projects/fr2019/project-files/dynamips
+Dec 27 15:49:14.940 HYPERVISOR: exec_cmd: hypervisor working_dir /home/franc/GNS3/projects/fr2019/project-files/dynamips/8775e669-0c31-4ec2-8438-d6bfb0e21b12 
+Dec 27 15:49:14.940 GENERAL: working_dir=/home/franc/GNS3/projects/fr2019/project-files/dynamips/8775e669-0c31-4ec2-8438-d6bfb0e21b12
+Dec 27 15:49:14.940 HYPERVISOR: exec_cmd: vm create R1 5 c7200 
+Dec 27 15:49:14.940 VM: VM R1 created.
+Dec 27 15:49:14.941 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5004 
+Dec 27 15:49:14.941 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Dec 27 15:49:14.941 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 27 15:49:14.941 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Dec 27 15:49:14.942 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Dec 27 15:49:14.942 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 27 15:49:14.942 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x601712a8 
+Dec 27 15:49:14.943 HYPERVISOR: exec_cmd: vm set_ios R1 /home/franc/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Dec 27 15:49:14.943 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca05.1927.0000 
+Dec 27 15:49:14.944 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Dec 27 15:49:14.944 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Dec 27 15:49:14.944 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 27 15:49:14.945 HYPERVISOR: exec_cmd: vm slot_remove_binding R1 0 0 
+Dec 27 15:49:14.945 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 27 15:49:14.945 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-2FE 
+Dec 27 15:49:14.945 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 27 15:49:14.945 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-2FE-TX 
+Dec 27 15:49:19.435 HYPERVISOR: exec_cmd: nio create_udp udp-5456b180-bf9a-4b2b-af39-88541538784e 10002 127.0.0.1 10003 
+Dec 27 15:49:19.650 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-5456b180-bf9a-4b2b-af39-88541538784e 
+Dec 27 15:49:19.651 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 27 15:49:19.750 HYPERVISOR: exec_cmd: nio create_udp udp-0f376259-1f9b-4aa9-a715-955996dd7c42 10010 127.0.0.1 10011 
+Dec 27 15:49:19.752 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-0f376259-1f9b-4aa9-a715-955996dd7c42 
+Dec 27 15:49:19.752 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 27 15:49:19.832 HYPERVISOR: exec_cmd: nio create_udp udp-679381b3-e54c-4433-bf13-83a89cfa82b0 10114 127.0.0.1 10115 
+Dec 27 15:49:19.834 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-679381b3-e54c-4433-bf13-83a89cfa82b0 
+Dec 27 15:49:19.834 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 27 15:49:40.568 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 27 15:49:40.569 HYPERVISOR: exec_cmd: vm extract_config R1 
+Dec 27 15:49:40.570 HYPERVISOR: exec_cmd: vm delete R1 
+Dec 27 15:49:40.570 VM: VM R1 destroyed.
+Dec 27 15:49:40.571 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 27 15:49:40.963 HYPERVISOR: Stopped.
+Dec 27 15:49:40.963 GENERAL: reset done.

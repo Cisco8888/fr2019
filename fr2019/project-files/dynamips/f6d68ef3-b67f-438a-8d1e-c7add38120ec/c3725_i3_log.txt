@@ -1,0 +1,1 @@
+Dec 27 15:49:40.832 VM: trying to shutdown an inactive VM.
