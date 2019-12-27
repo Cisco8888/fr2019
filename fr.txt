@@ -1,0 +1,52 @@
+Disable RIP auto summary:
+
+router rip
+
+no auto-summary
+
+
+
+Enable IPv6:
+
+ipv6 unicast-routing
+
+Example for configuring an IPv4 private, public and IPv6 addressing in a VLAN in an L3 switch:
+
+interface vlan 4
+ip address 192.168.159.254 255.255.224.0
+ip address 193.10.10.93 255.255.255.224 secondary
+ipv6 address 2200:b:b:4::1/64
+ipv6 rip 1 enable
+
+no autostate
+
+
+
+To define a port as inter-switch/Trunk (as example):
+
+interface FastEthernet1/1
+switchport mode trunk
+
+
+
+To transform a Layer 2 port (from a Router switching module) into a Layer3 port:
+
+interface 1/14
+
+no switchport
+
+
+
+To define a default rout announcement using RIPng:
+
+interface f0/0                           <- inside interfaces
+
+ipv6 rip process1 default-information originate
+
+
+
+Activate DHCP server on equipment with 3725 Firmware:
+
+#configure terminal
+
+(config)#service dhcp
