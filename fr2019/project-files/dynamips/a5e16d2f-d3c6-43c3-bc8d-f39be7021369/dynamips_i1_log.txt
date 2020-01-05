@@ -1,0 +1,54 @@
+Jan 04 11:44:11.386 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 04 11:44:11.386 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53265.
+Jan 04 11:44:11.388 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 04 11:44:11.389 HYPERVISOR: exec_cmd: hypervisor working_dir /home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips 
+Jan 04 11:44:11.389 GENERAL: working_dir=/home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips
+Jan 04 11:44:11.389 HYPERVISOR: exec_cmd: hypervisor working_dir /home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips/a5e16d2f-d3c6-43c3-bc8d-f39be7021369 
+Jan 04 11:44:11.389 GENERAL: working_dir=/home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips/a5e16d2f-d3c6-43c3-bc8d-f39be7021369
+Jan 04 11:44:11.389 HYPERVISOR: exec_cmd: vm create SWL3F2 1 c3725 
+Jan 04 11:44:11.389 VM: VM SWL3F2 created.
+Jan 04 11:44:11.390 HYPERVISOR: exec_cmd: vm set_con_tcp_port SWL3F2 5000 
+Jan 04 11:44:11.390 HYPERVISOR: exec_cmd: c3725 get_mac_addr SWL3F2 
+Jan 04 11:44:11.390 HYPERVISOR: exec_cmd: vm set_disk0 SWL3F2 1 
+Jan 04 11:44:11.390 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 04 11:44:11.390 HYPERVISOR: exec_cmd: vm set_idle_pc SWL3F2 0x60a68e70 
+Jan 04 11:44:11.391 HYPERVISOR: exec_cmd: vm set_ios SWL3F2 /home/danimag/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 04 11:44:11.391 HYPERVISOR: exec_cmd: c3725 set_mac_addr SWL3F2 c201.18e9.0000 
+Jan 04 11:44:11.392 HYPERVISOR: exec_cmd: vm set_nvram SWL3F2 256 
+Jan 04 11:44:11.392 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 04 11:44:11.392 HYPERVISOR: exec_cmd: vm slot_add_binding SWL3F2 1 0 NM-16ESW 
+Jan 04 11:44:11.848 HYPERVISOR: exec_cmd: nio create_udp udp-c0b744cc-8f31-48fc-bb45-73dbcac39f9f 10002 127.0.0.1 10003 
+Jan 04 11:44:12.063 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3F2 1 0 udp-c0b744cc-8f31-48fc-bb45-73dbcac39f9f 
+Jan 04 11:44:12.064 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 04 11:44:12.175 HYPERVISOR: exec_cmd: nio create_udp udp-9b6aeb86-54ec-42bd-bec9-e9c2f62fe64d 10006 127.0.0.1 10007 
+Jan 04 11:44:12.177 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3F2 1 1 udp-9b6aeb86-54ec-42bd-bec9-e9c2f62fe64d 
+Jan 04 11:44:12.177 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 04 11:44:14.489 HYPERVISOR: exec_cmd: nio create_udp udp-a41cf697-ee7f-4616-bf7d-f59bb3e4d930 10068 127.0.0.1 10069 
+Jan 04 11:44:14.490 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3F2 1 2 udp-a41cf697-ee7f-4616-bf7d-f59bb3e4d930 
+Jan 04 11:44:14.490 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 04 11:44:15.007 HYPERVISOR: exec_cmd: nio create_udp udp-9709bea8-331e-4f8a-8846-8f54c3040f8b 10096 127.0.0.1 10097 
+Jan 04 11:44:15.008 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3F2 1 3 udp-9709bea8-331e-4f8a-8846-8f54c3040f8b 
+Jan 04 11:44:15.009 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 04 11:44:22.037 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Jan 04 11:44:22.037 VM: VM Ghost created.
+Jan 04 11:44:22.038 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/danimag/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 04 11:44:22.039 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 04 11:44:22.039 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 04 11:44:22.040 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 04 11:44:22.040 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Jan 04 11:44:22.040 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 04 11:44:22.393 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 04 11:44:22.393 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jan 04 11:44:22.451 VM: VM Ghost shutdown.
+Jan 04 11:44:22.453 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jan 04 11:44:22.454 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 04 11:44:22.454 VM: VM Ghost destroyed.
+Jan 04 11:44:22.457 HYPERVISOR: exec_cmd: vm set_ghost_status SWL3F2 2 
+Jan 04 11:44:22.458 HYPERVISOR: exec_cmd: vm set_ghost_file SWL3F2 /home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 04 11:44:22.458 HYPERVISOR: exec_cmd: vm get_status SWL3F2 
+Jan 04 11:44:22.460 HYPERVISOR: exec_cmd: vm set_config SWL3F2 configs/i1_startup-config.cfg 
+Jan 04 11:44:22.460 HYPERVISOR: exec_cmd: vm start SWL3F2 
+Jan 04 12:22:22.976 HYPERVISOR: exec_cmd: vm extract_config SWL3F2 
+Jan 04 12:22:22.981 HYPERVISOR: exec_cmd: vm extract_config SWL3F2 
+Jan 04 12:24:22.992 HYPERVISOR: exec_cmd: vm extract_config SWL3F2 
+Jan 04 12:24:22.997 HYPERVISOR: exec_cmd: vm extract_config SWL3F2 

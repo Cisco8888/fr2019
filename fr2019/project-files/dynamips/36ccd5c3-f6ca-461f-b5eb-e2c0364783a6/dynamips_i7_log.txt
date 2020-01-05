@@ -1,0 +1,38 @@
+Jan 04 11:44:11.620 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 04 11:44:11.620 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56855.
+Jan 04 11:44:11.630 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 04 11:44:11.630 HYPERVISOR: exec_cmd: hypervisor working_dir /home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips 
+Jan 04 11:44:11.630 GENERAL: working_dir=/home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips
+Jan 04 11:44:11.631 HYPERVISOR: exec_cmd: ethsw create DMZ/DataCenter 
+Jan 04 11:44:13.531 HYPERVISOR: exec_cmd: nio create_udp udp-4f33efe8-e36f-495e-9958-ad3d1d6ae46e 10036 127.0.0.1 10037 
+Jan 04 11:44:13.531 HYPERVISOR: exec_cmd: ethsw add_nio DMZ/DataCenter udp-4f33efe8-e36f-495e-9958-ad3d1d6ae46e 
+Jan 04 11:44:13.550 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ/DataCenter udp-4f33efe8-e36f-495e-9958-ad3d1d6ae46e 2 
+Jan 04 11:44:13.600 HYPERVISOR: exec_cmd: nio create_udp udp-8dfa48cd-76c9-44bd-9a67-e90d1931d015 10038 127.0.0.1 10039 
+Jan 04 11:44:13.600 HYPERVISOR: exec_cmd: ethsw add_nio DMZ/DataCenter udp-8dfa48cd-76c9-44bd-9a67-e90d1931d015 
+Jan 04 11:44:13.611 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ/DataCenter udp-8dfa48cd-76c9-44bd-9a67-e90d1931d015 1 
+Jan 04 11:44:13.658 HYPERVISOR: exec_cmd: nio create_udp udp-4ede0cc1-d592-4c32-85e6-e3c7b457cc26 10040 127.0.0.1 10041 
+Jan 04 11:44:13.658 HYPERVISOR: exec_cmd: ethsw add_nio DMZ/DataCenter udp-4ede0cc1-d592-4c32-85e6-e3c7b457cc26 
+Jan 04 11:44:13.671 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ/DataCenter udp-4ede0cc1-d592-4c32-85e6-e3c7b457cc26 1 
+Jan 04 11:44:13.721 HYPERVISOR: exec_cmd: nio create_udp udp-aa45cb58-faa5-4b28-b054-ee0896af4a74 10042 127.0.0.1 10043 
+Jan 04 11:44:13.721 HYPERVISOR: exec_cmd: ethsw add_nio DMZ/DataCenter udp-aa45cb58-faa5-4b28-b054-ee0896af4a74 
+Jan 04 11:44:13.731 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ/DataCenter udp-aa45cb58-faa5-4b28-b054-ee0896af4a74 1 
+Jan 04 11:44:14.824 HYPERVISOR: exec_cmd: nio create_udp udp-e72f89c3-b030-4e8f-8335-2bc409489f1c 10077 127.0.0.1 10076 
+Jan 04 11:44:14.824 HYPERVISOR: exec_cmd: ethsw add_nio DMZ/DataCenter udp-e72f89c3-b030-4e8f-8335-2bc409489f1c 
+Jan 04 11:44:14.840 HYPERVISOR: exec_cmd: ethsw set_dot1q_port DMZ/DataCenter udp-e72f89c3-b030-4e8f-8335-2bc409489f1c 10 
+Jan 04 12:48:01.026 HYPERVISOR: exec_cmd: nio bind_filter udp-4ede0cc1-d592-4c32-85e6-e3c7b457cc26 2 capture 
+Jan 04 12:48:01.026 HYPERVISOR: exec_cmd: nio setup_filter udp-4ede0cc1-d592-4c32-85e6-e3c7b457cc26 2 en10mb /home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/captures/DMZDataCenter_Ethernet1_to_DMZPriv_Ethernet0.pcap 
+Jan 04 12:48:53.796 HYPERVISOR: exec_cmd: ethsw set_dot1q_port DMZ/DataCenter udp-e72f89c3-b030-4e8f-8335-2bc409489f1c 1 
+Jan 04 12:48:53.797 HYPERVISOR: exec_cmd: ethsw set_dot1q_port DMZ/DataCenter udp-4ede0cc1-d592-4c32-85e6-e3c7b457cc26 99 
+Jan 04 12:48:53.797 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ/DataCenter udp-aa45cb58-faa5-4b28-b054-ee0896af4a74 1 
+Jan 04 12:48:53.798 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ/DataCenter udp-4f33efe8-e36f-495e-9958-ad3d1d6ae46e 2 
+Jan 04 12:48:53.798 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ/DataCenter udp-8dfa48cd-76c9-44bd-9a67-e90d1931d015 1 
+Jan 04 12:49:45.273 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ/DataCenter udp-e72f89c3-b030-4e8f-8335-2bc409489f1c 1 
+Jan 04 12:49:45.274 HYPERVISOR: exec_cmd: ethsw set_dot1q_port DMZ/DataCenter udp-4ede0cc1-d592-4c32-85e6-e3c7b457cc26 99 
+Jan 04 12:49:45.274 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ/DataCenter udp-aa45cb58-faa5-4b28-b054-ee0896af4a74 1 
+Jan 04 12:49:45.275 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ/DataCenter udp-4f33efe8-e36f-495e-9958-ad3d1d6ae46e 2 
+Jan 04 12:49:45.275 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ/DataCenter udp-8dfa48cd-76c9-44bd-9a67-e90d1931d015 1 
+Jan 04 12:50:19.935 HYPERVISOR: exec_cmd: ethsw set_dot1q_port DMZ/DataCenter udp-e72f89c3-b030-4e8f-8335-2bc409489f1c 99 
+Jan 04 12:50:19.936 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ/DataCenter udp-4ede0cc1-d592-4c32-85e6-e3c7b457cc26 1 
+Jan 04 12:50:19.937 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ/DataCenter udp-aa45cb58-faa5-4b28-b054-ee0896af4a74 1 
+Jan 04 12:50:19.937 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ/DataCenter udp-4f33efe8-e36f-495e-9958-ad3d1d6ae46e 2 
+Jan 04 12:50:19.937 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ/DataCenter udp-8dfa48cd-76c9-44bd-9a67-e90d1931d015 1 

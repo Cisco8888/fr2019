@@ -1,0 +1,38 @@
+Jan 04 11:44:11.406 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 04 11:44:11.406 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 39433.
+Jan 04 11:44:11.416 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 04 11:44:11.416 HYPERVISOR: exec_cmd: hypervisor working_dir /home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips 
+Jan 04 11:44:11.416 GENERAL: working_dir=/home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips
+Jan 04 11:44:11.416 HYPERVISOR: exec_cmd: hypervisor working_dir /home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips/8619668e-9291-453e-ae31-3197af9f0bfa 
+Jan 04 11:44:11.416 GENERAL: working_dir=/home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips/8619668e-9291-453e-ae31-3197af9f0bfa
+Jan 04 11:44:11.416 HYPERVISOR: exec_cmd: vm create SWL3F1 2 c3725 
+Jan 04 11:44:11.416 VM: VM SWL3F1 created.
+Jan 04 11:44:11.416 HYPERVISOR: exec_cmd: vm set_con_tcp_port SWL3F1 5001 
+Jan 04 11:44:11.417 HYPERVISOR: exec_cmd: c3725 get_mac_addr SWL3F1 
+Jan 04 11:44:11.417 HYPERVISOR: exec_cmd: vm set_disk0 SWL3F1 1 
+Jan 04 11:44:11.417 HYPERVISOR: exec_cmd: vm get_status SWL3F1 
+Jan 04 11:44:11.417 HYPERVISOR: exec_cmd: vm set_idle_pc SWL3F1 0x60a68e70 
+Jan 04 11:44:11.417 HYPERVISOR: exec_cmd: vm set_ios SWL3F1 /home/danimag/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 04 11:44:11.418 HYPERVISOR: exec_cmd: c3725 set_mac_addr SWL3F1 c202.18f8.0000 
+Jan 04 11:44:11.418 HYPERVISOR: exec_cmd: vm set_nvram SWL3F1 256 
+Jan 04 11:44:11.418 HYPERVISOR: exec_cmd: vm get_status SWL3F1 
+Jan 04 11:44:11.418 HYPERVISOR: exec_cmd: vm slot_add_binding SWL3F1 1 0 NM-16ESW 
+Jan 04 11:44:13.779 HYPERVISOR: exec_cmd: nio create_udp udp-8c756baa-1201-4f20-857b-759b2bc66e16 10046 127.0.0.1 10047 
+Jan 04 11:44:13.993 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3F1 1 0 udp-8c756baa-1201-4f20-857b-759b2bc66e16 
+Jan 04 11:44:13.994 HYPERVISOR: exec_cmd: vm get_status SWL3F1 
+Jan 04 11:44:14.074 HYPERVISOR: exec_cmd: nio create_udp udp-98141240-559d-41d3-ae22-8ae37afcf122 10050 127.0.0.1 10051 
+Jan 04 11:44:14.075 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3F1 1 1 udp-98141240-559d-41d3-ae22-8ae37afcf122 
+Jan 04 11:44:14.075 HYPERVISOR: exec_cmd: vm get_status SWL3F1 
+Jan 04 11:44:14.531 HYPERVISOR: exec_cmd: nio create_udp udp-73f7ce96-4534-4b10-9211-b08722d1be0a 10072 127.0.0.1 10073 
+Jan 04 11:44:14.532 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3F1 1 3 udp-73f7ce96-4534-4b10-9211-b08722d1be0a 
+Jan 04 11:44:14.532 HYPERVISOR: exec_cmd: vm get_status SWL3F1 
+Jan 04 11:44:14.949 HYPERVISOR: exec_cmd: nio create_udp udp-915908ab-6c07-4c71-bebc-e230032074e6 10088 127.0.0.1 10089 
+Jan 04 11:44:14.950 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3F1 1 2 udp-915908ab-6c07-4c71-bebc-e230032074e6 
+Jan 04 11:44:14.950 HYPERVISOR: exec_cmd: vm get_status SWL3F1 
+Jan 04 11:44:22.459 HYPERVISOR: exec_cmd: vm set_ghost_status SWL3F1 2 
+Jan 04 11:44:22.460 HYPERVISOR: exec_cmd: vm set_ghost_file SWL3F1 /home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 04 11:44:22.461 HYPERVISOR: exec_cmd: vm get_status SWL3F1 
+Jan 04 11:44:22.462 HYPERVISOR: exec_cmd: vm set_config SWL3F1 configs/i2_startup-config.cfg 
+Jan 04 11:44:22.463 HYPERVISOR: exec_cmd: vm start SWL3F1 
+Jan 04 12:55:53.242 HYPERVISOR: exec_cmd: vm extract_config SWL3F1 
+Jan 04 12:55:53.244 HYPERVISOR: exec_cmd: vm extract_config SWL3F1 

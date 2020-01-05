@@ -1,0 +1,38 @@
+Jan 04 11:44:11.512 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 04 11:44:11.512 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 47861.
+Jan 04 11:44:11.522 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 04 11:44:11.523 HYPERVISOR: exec_cmd: hypervisor working_dir /home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips 
+Jan 04 11:44:11.523 GENERAL: working_dir=/home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips
+Jan 04 11:44:11.523 HYPERVISOR: exec_cmd: hypervisor working_dir /home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips/d5d7b5f0-d295-4075-b5b5-f2174eea8892 
+Jan 04 11:44:11.523 GENERAL: working_dir=/home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips/d5d7b5f0-d295-4075-b5b5-f2174eea8892
+Jan 04 11:44:11.523 HYPERVISOR: exec_cmd: vm create ISP 6 c7200 
+Jan 04 11:44:11.523 VM: VM ISP created.
+Jan 04 11:44:11.523 HYPERVISOR: exec_cmd: vm set_con_tcp_port ISP 5005 
+Jan 04 11:44:11.524 HYPERVISOR: exec_cmd: c7200 get_mac_addr ISP 
+Jan 04 11:44:11.524 HYPERVISOR: exec_cmd: vm get_status ISP 
+Jan 04 11:44:11.524 HYPERVISOR: exec_cmd: vm slot_add_binding ISP 0 0 C7200-IO-FE 
+Jan 04 11:44:11.524 HYPERVISOR: exec_cmd: vm set_disk0 ISP 0 
+Jan 04 11:44:11.525 HYPERVISOR: exec_cmd: vm get_status ISP 
+Jan 04 11:44:11.525 HYPERVISOR: exec_cmd: vm set_idle_pc ISP 0x601712a8 
+Jan 04 11:44:11.525 HYPERVISOR: exec_cmd: vm set_ios ISP /home/danimag/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jan 04 11:44:11.525 HYPERVISOR: exec_cmd: c7200 set_mac_addr ISP ca06.1936.0000 
+Jan 04 11:44:11.526 HYPERVISOR: exec_cmd: vm set_nvram ISP 512 
+Jan 04 11:44:11.526 HYPERVISOR: exec_cmd: vm set_ram ISP 512 
+Jan 04 11:44:11.526 HYPERVISOR: exec_cmd: vm get_status ISP 
+Jan 04 11:44:11.526 HYPERVISOR: exec_cmd: vm slot_remove_binding ISP 0 0 
+Jan 04 11:44:11.526 HYPERVISOR: exec_cmd: vm get_status ISP 
+Jan 04 11:44:11.526 HYPERVISOR: exec_cmd: vm slot_add_binding ISP 0 0 C7200-IO-2FE 
+Jan 04 11:44:11.526 HYPERVISOR: exec_cmd: vm get_status ISP 
+Jan 04 11:44:11.527 HYPERVISOR: exec_cmd: vm slot_add_binding ISP 1 0 PA-2FE-TX 
+Jan 04 11:44:12.228 HYPERVISOR: exec_cmd: nio create_udp udp-eaeefbb5-99aa-41aa-ba46-cf957b49ffbe 10010 127.0.0.1 10011 
+Jan 04 11:44:12.442 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP 0 1 udp-eaeefbb5-99aa-41aa-ba46-cf957b49ffbe 
+Jan 04 11:44:12.443 HYPERVISOR: exec_cmd: vm get_status ISP 
+Jan 04 11:44:12.760 HYPERVISOR: exec_cmd: nio create_udp udp-4af2cb73-4726-498e-9a4a-de6e5973a90c 10016 127.0.0.1 10017 
+Jan 04 11:44:12.762 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP 0 0 udp-4af2cb73-4726-498e-9a4a-de6e5973a90c 
+Jan 04 11:44:12.762 HYPERVISOR: exec_cmd: vm get_status ISP 
+Jan 04 11:44:23.323 HYPERVISOR: exec_cmd: vm set_ghost_status ISP 2 
+Jan 04 11:44:23.324 HYPERVISOR: exec_cmd: vm set_ghost_file ISP /home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips/c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jan 04 11:44:23.324 HYPERVISOR: exec_cmd: vm get_status ISP 
+Jan 04 11:44:23.325 HYPERVISOR: exec_cmd: vm set_config ISP configs/i6_startup-config.cfg configs/i6_private-config.cfg 
+Jan 04 11:44:23.325 HYPERVISOR: exec_cmd: vm start ISP 
+Jan 04 11:44:53.561 HYPERVISOR: exec_cmd: vm extract_config ISP 

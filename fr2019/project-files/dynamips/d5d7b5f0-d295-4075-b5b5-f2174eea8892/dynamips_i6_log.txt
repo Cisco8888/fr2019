@@ -1,0 +1,38 @@
+Jan 04 11:44:11.567 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 04 11:44:11.567 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 35513.
+Jan 04 11:44:11.577 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 04 11:44:11.577 HYPERVISOR: exec_cmd: hypervisor working_dir /home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips 
+Jan 04 11:44:11.577 GENERAL: working_dir=/home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips
+Jan 04 11:44:11.578 HYPERVISOR: exec_cmd: hypervisor working_dir /home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips/36ccd5c3-f6ca-461f-b5eb-e2c0364783a6 
+Jan 04 11:44:11.578 GENERAL: working_dir=/home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips/36ccd5c3-f6ca-461f-b5eb-e2c0364783a6
+Jan 04 11:44:11.578 HYPERVISOR: exec_cmd: vm create RouterA 7 c7200 
+Jan 04 11:44:11.578 VM: VM RouterA created.
+Jan 04 11:44:11.578 HYPERVISOR: exec_cmd: vm set_con_tcp_port RouterA 5008 
+Jan 04 11:44:11.578 HYPERVISOR: exec_cmd: c7200 get_mac_addr RouterA 
+Jan 04 11:44:11.579 HYPERVISOR: exec_cmd: vm get_status RouterA 
+Jan 04 11:44:11.579 HYPERVISOR: exec_cmd: vm slot_add_binding RouterA 0 0 C7200-IO-FE 
+Jan 04 11:44:11.579 HYPERVISOR: exec_cmd: vm set_disk0 RouterA 0 
+Jan 04 11:44:11.580 HYPERVISOR: exec_cmd: vm get_status RouterA 
+Jan 04 11:44:11.580 HYPERVISOR: exec_cmd: vm set_idle_pc RouterA 0x601712a8 
+Jan 04 11:44:11.580 HYPERVISOR: exec_cmd: vm set_ios RouterA /home/danimag/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jan 04 11:44:11.580 HYPERVISOR: exec_cmd: c7200 set_mac_addr RouterA ca07.194a.0000 
+Jan 04 11:44:11.581 HYPERVISOR: exec_cmd: vm set_nvram RouterA 512 
+Jan 04 11:44:11.581 HYPERVISOR: exec_cmd: vm set_ram RouterA 512 
+Jan 04 11:44:11.581 HYPERVISOR: exec_cmd: vm get_status RouterA 
+Jan 04 11:44:11.581 HYPERVISOR: exec_cmd: vm slot_remove_binding RouterA 0 0 
+Jan 04 11:44:11.581 HYPERVISOR: exec_cmd: vm get_status RouterA 
+Jan 04 11:44:11.581 HYPERVISOR: exec_cmd: vm slot_add_binding RouterA 0 0 C7200-IO-2FE 
+Jan 04 11:44:11.582 HYPERVISOR: exec_cmd: vm get_status RouterA 
+Jan 04 11:44:11.582 HYPERVISOR: exec_cmd: vm slot_add_binding RouterA 1 0 PA-2FE-TX 
+Jan 04 11:44:12.808 HYPERVISOR: exec_cmd: nio create_udp udp-bf6d620d-2b0b-400d-97ce-d084c8f99477 10020 127.0.0.1 10021 
+Jan 04 11:44:13.022 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RouterA 0 1 udp-bf6d620d-2b0b-400d-97ce-d084c8f99477 
+Jan 04 11:44:13.023 HYPERVISOR: exec_cmd: vm get_status RouterA 
+Jan 04 11:44:14.377 HYPERVISOR: exec_cmd: nio create_udp udp-d5a1db56-086c-48f2-a3b0-c0a6cf48e630 10056 127.0.0.1 10057 
+Jan 04 11:44:14.380 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RouterA 0 0 udp-d5a1db56-086c-48f2-a3b0-c0a6cf48e630 
+Jan 04 11:44:14.381 HYPERVISOR: exec_cmd: vm get_status RouterA 
+Jan 04 11:44:23.324 HYPERVISOR: exec_cmd: vm set_ghost_status RouterA 2 
+Jan 04 11:44:23.325 HYPERVISOR: exec_cmd: vm set_ghost_file RouterA /home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips/c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jan 04 11:44:23.325 HYPERVISOR: exec_cmd: vm get_status RouterA 
+Jan 04 11:44:23.326 HYPERVISOR: exec_cmd: vm set_config RouterA configs/i7_startup-config.cfg 
+Jan 04 11:44:23.326 HYPERVISOR: exec_cmd: vm start RouterA 
+Jan 04 11:44:53.561 HYPERVISOR: exec_cmd: vm extract_config RouterA 

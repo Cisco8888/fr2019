@@ -1,0 +1,56 @@
+Jan 04 11:44:11.483 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 04 11:44:11.483 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52421.
+Jan 04 11:44:11.493 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 04 11:44:11.493 HYPERVISOR: exec_cmd: hypervisor working_dir /home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips 
+Jan 04 11:44:11.493 GENERAL: working_dir=/home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips
+Jan 04 11:44:11.493 HYPERVISOR: exec_cmd: hypervisor working_dir /home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips/8775e669-0c31-4ec2-8438-d6bfb0e21b12 
+Jan 04 11:44:11.493 GENERAL: working_dir=/home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips/8775e669-0c31-4ec2-8438-d6bfb0e21b12
+Jan 04 11:44:11.494 HYPERVISOR: exec_cmd: vm create R1 5 c7200 
+Jan 04 11:44:11.494 VM: VM R1 created.
+Jan 04 11:44:11.494 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5004 
+Jan 04 11:44:11.494 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Jan 04 11:44:11.494 HYPERVISOR: exec_cmd: vm get_status R1 
+Jan 04 11:44:11.495 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Jan 04 11:44:11.495 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Jan 04 11:44:11.495 HYPERVISOR: exec_cmd: vm get_status R1 
+Jan 04 11:44:11.495 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x601712a8 
+Jan 04 11:44:11.496 HYPERVISOR: exec_cmd: vm set_ios R1 /home/danimag/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jan 04 11:44:11.496 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca05.1927.0000 
+Jan 04 11:44:11.497 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Jan 04 11:44:11.497 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Jan 04 11:44:11.497 HYPERVISOR: exec_cmd: vm get_status R1 
+Jan 04 11:44:11.497 HYPERVISOR: exec_cmd: vm slot_remove_binding R1 0 0 
+Jan 04 11:44:11.497 HYPERVISOR: exec_cmd: vm get_status R1 
+Jan 04 11:44:11.498 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-2FE 
+Jan 04 11:44:11.498 HYPERVISOR: exec_cmd: vm get_status R1 
+Jan 04 11:44:11.498 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-2FE-TX 
+Jan 04 11:44:12.518 HYPERVISOR: exec_cmd: nio create_udp udp-5cc04460-73f4-4b6c-82a0-27c07e307743 10014 127.0.0.1 10015 
+Jan 04 11:44:12.732 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-5cc04460-73f4-4b6c-82a0-27c07e307743 
+Jan 04 11:44:12.733 HYPERVISOR: exec_cmd: vm get_status R1 
+Jan 04 11:44:14.438 HYPERVISOR: exec_cmd: nio create_udp udp-92cc6d32-ccf7-434d-a030-625e7cb342f9 10062 127.0.0.1 10063 
+Jan 04 11:44:14.439 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-92cc6d32-ccf7-434d-a030-625e7cb342f9 
+Jan 04 11:44:14.440 HYPERVISOR: exec_cmd: vm get_status R1 
+Jan 04 11:44:15.058 HYPERVISOR: exec_cmd: nio create_udp udp-79127e6e-5c1e-405b-b3a6-a476fe12cdf0 10102 127.0.0.1 10103 
+Jan 04 11:44:15.059 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 1 udp-79127e6e-5c1e-405b-b3a6-a476fe12cdf0 
+Jan 04 11:44:15.060 HYPERVISOR: exec_cmd: vm get_status R1 
+Jan 04 11:44:22.679 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Jan 04 11:44:22.679 VM: VM Ghost created.
+Jan 04 11:44:22.682 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/danimag/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jan 04 11:44:22.683 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 04 11:44:22.684 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips/c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jan 04 11:44:22.685 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Jan 04 11:44:22.685 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 04 11:44:22.686 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Jan 04 11:44:22.686 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 04 11:44:23.115 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 04 11:44:23.116 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jan 04 11:44:23.320 VM: VM Ghost shutdown.
+Jan 04 11:44:23.320 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jan 04 11:44:23.321 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 04 11:44:23.321 VM: VM Ghost destroyed.
+Jan 04 11:44:23.322 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Jan 04 11:44:23.323 HYPERVISOR: exec_cmd: vm set_ghost_file R1 /home/danimag/Desktop/fr_proj/fr2019/fr2019/project-files/dynamips/c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jan 04 11:44:23.323 HYPERVISOR: exec_cmd: vm get_status R1 
+Jan 04 11:44:23.323 HYPERVISOR: exec_cmd: vm set_config R1 configs/i5_startup-config.cfg 
+Jan 04 11:44:23.324 HYPERVISOR: exec_cmd: vm start R1 
+Jan 04 11:44:53.536 HYPERVISOR: exec_cmd: vm extract_config R1 
