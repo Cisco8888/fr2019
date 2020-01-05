@@ -1,0 +1,67 @@
+Jan 05 21:57:31.444 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 05 21:57:31.444 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 40071.
+Jan 05 21:57:31.454 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 05 21:57:31.455 HYPERVISOR: exec_cmd: hypervisor working_dir /home/franc/Desktop/FR2019/fr2019/project-files/dynamips 
+Jan 05 21:57:31.455 GENERAL: working_dir=/home/franc/Desktop/FR2019/fr2019/project-files/dynamips
+Jan 05 21:57:31.455 HYPERVISOR: exec_cmd: hypervisor working_dir /home/franc/Desktop/FR2019/fr2019/project-files/dynamips/47e53188-2bcc-4dc5-80c5-6e1964007b45 
+Jan 05 21:57:31.455 GENERAL: working_dir=/home/franc/Desktop/FR2019/fr2019/project-files/dynamips/47e53188-2bcc-4dc5-80c5-6e1964007b45
+Jan 05 21:57:31.455 HYPERVISOR: exec_cmd: vm create R1 5 c7200 
+Jan 05 21:57:31.455 VM: VM R1 created.
+Jan 05 21:57:31.456 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5042 
+Jan 05 21:57:31.456 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Jan 05 21:57:31.457 HYPERVISOR: exec_cmd: vm get_status R1 
+Jan 05 21:57:31.457 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Jan 05 21:57:31.458 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Jan 05 21:57:31.460 HYPERVISOR: exec_cmd: vm get_status R1 
+Jan 05 21:57:31.461 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x601712a8 
+Jan 05 21:57:31.466 HYPERVISOR: exec_cmd: vm set_ios R1 /home/franc/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jan 05 21:57:31.467 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca05.275c.0000 
+Jan 05 21:57:31.468 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Jan 05 21:57:31.468 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Jan 05 21:57:31.469 HYPERVISOR: exec_cmd: vm get_status R1 
+Jan 05 21:57:31.470 HYPERVISOR: exec_cmd: vm slot_remove_binding R1 0 0 
+Jan 05 21:57:31.470 HYPERVISOR: exec_cmd: vm get_status R1 
+Jan 05 21:57:31.470 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-2FE 
+Jan 05 21:57:31.471 HYPERVISOR: exec_cmd: vm get_status R1 
+Jan 05 21:57:31.472 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-2FE-TX 
+Jan 05 21:57:34.177 HYPERVISOR: exec_cmd: nio create_udp udp-e4b3790e-182d-4f61-aacf-42070116c56b 10042 127.0.0.1 10043 
+Jan 05 21:57:34.389 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-e4b3790e-182d-4f61-aacf-42070116c56b 
+Jan 05 21:57:34.390 HYPERVISOR: exec_cmd: vm get_status R1 
+Jan 05 21:57:35.763 HYPERVISOR: exec_cmd: nio create_udp udp-ad694343-3724-42d2-9cb3-32bb08c974c8 10094 127.0.0.1 10095 
+Jan 05 21:57:35.765 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-ad694343-3724-42d2-9cb3-32bb08c974c8 
+Jan 05 21:57:35.765 HYPERVISOR: exec_cmd: vm get_status R1 
+Jan 05 21:57:36.243 HYPERVISOR: exec_cmd: nio create_udp udp-6db9b59d-0da4-4d05-b91a-176d1ff160d7 10106 127.0.0.1 10107 
+Jan 05 21:57:36.245 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-6db9b59d-0da4-4d05-b91a-176d1ff160d7 
+Jan 05 21:57:36.245 HYPERVISOR: exec_cmd: vm get_status R1 
+Jan 05 21:57:50.068 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Jan 05 21:57:50.068 VM: VM Ghost created.
+Jan 05 21:57:50.069 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/franc/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jan 05 21:57:50.070 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 05 21:57:50.070 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/franc/Desktop/FR2019/fr2019/project-files/dynamips/c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jan 05 21:57:50.071 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Jan 05 21:57:50.071 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 05 21:57:50.075 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Jan 05 21:57:50.075 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 05 21:57:50.560 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 05 21:57:50.561 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jan 05 21:57:50.726 VM: VM Ghost shutdown.
+Jan 05 21:57:50.728 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jan 05 21:57:50.728 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 05 21:57:50.728 VM: VM Ghost destroyed.
+Jan 05 21:57:50.730 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Jan 05 21:57:50.730 HYPERVISOR: exec_cmd: vm set_ghost_file R1 /home/franc/Desktop/FR2019/fr2019/project-files/dynamips/c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jan 05 21:57:50.738 HYPERVISOR: exec_cmd: vm get_status R1 
+Jan 05 21:57:50.739 HYPERVISOR: exec_cmd: vm set_config R1 configs/i5_startup-config.cfg configs/i5_private-config.cfg 
+Jan 05 21:57:50.739 HYPERVISOR: exec_cmd: vm start R1 
+Jan 05 21:58:21.040 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jan 05 21:58:24.507 HYPERVISOR: exec_cmd: vm get_status R1 
+Jan 05 21:58:24.508 HYPERVISOR: exec_cmd: vm stop R1 
+Jan 05 21:58:24.648 VM: VM R1 shutdown.
+Jan 05 21:58:24.649 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jan 05 21:58:26.897 HYPERVISOR: exec_cmd: vm get_status R1 
+Jan 05 21:58:26.897 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jan 05 21:58:26.899 HYPERVISOR: exec_cmd: vm delete R1 
+Jan 05 21:58:26.899 VM: VM R1 destroyed.
+Jan 05 21:58:26.900 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 05 21:58:27.048 HYPERVISOR: Stopped.
+Jan 05 21:58:27.048 GENERAL: reset done.
